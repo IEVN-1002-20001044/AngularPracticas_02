@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="cinepolis.component.css">
+</head>
+<body>
+  <div class="principal">
+    <h1 class="titulo">Cinepolis</h1>
+    <div class="container">
+      <h2>Entradas</h2>
+      <mat-form-field>
+        Nombre <input matInput [(ngModel)]="nombre" type="text" name="nombre" placeholder="Nombre">
+        Cantidad compradores <input matInput [(ngModel)]="cant" type="number" placeholder="Cantidad">
+        Cantidad de boletos <input matInput [(ngModel)]="cantBoletos" type="number" placeholder="Boletos">
+      </mat-form-field>
+      <div>
+        tarjeta <input type="radio" class="form-check-input" [(ngModel)]="tarjeta" value="si" required>Si
+              <input type="radio" class="form-check-input" [(ngModel)]="tarjeta" value="no" required>No
+      </div>
+      
+    </div>
+    <div class="container">
+      <h2>Salidas</h2>
+      <p>Subtotal: {{signo}} {{pagar}}</p>
+      <p>Descuento del {{tipoDescuento}} = {{descuento}}</p>
+      <p>Total con descuento: ${{total}}</p> <br>
+      
+    </div> 
+  </div>
+  <div class="containerBajo">
+    <h2>Acciones</h2><br>
+    <button (click)="proceso()">Procesar</button><br><br>
+    <button (click)="salir()">Salir</button>
+  </div>
+</body>
+</html>
+

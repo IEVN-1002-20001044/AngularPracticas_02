@@ -1,0 +1,43 @@
+@-o-viewport{
+    size: 1500px;}
+html{
+    width: 1500px;
+    padding: 20px;
+    background-color: #090058;
+}
+ body{
+    padding: 20px;
+    background-color: #090058;
+    background-image: url("img/logo_cine_transp.png");
+    background-size: 1200px;
+    
+  }
+  
+h1{
+    display: flex;
+    font-size: 36px;  
+    color: #fff;        
+    font-family: 'Lucida Sans';
+    text-transform: uppercase; 
+}
+
+.principal{
+    display: flex;
+}
+.container {
+    margin: 1rem auto;
+    border: 2px solid #fff; 
+    padding: 20px; 
+    max-width: 400px;
+    color: #fff;
+}
+
+.containerBajo{
+    color: #fff;
+    display: center;
+    justify-content: center;
+    margin: 1rem auto;
+    border: 2px solid #fff; 
+    padding: 20px; 
+    max-width: 400px;
+}
