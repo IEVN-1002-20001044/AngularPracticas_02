@@ -1,0 +1,10 @@
+.cont-padre{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    
+}
+#barra{
+    color: #e9e9e9;
+    background-color: #090085;
+}

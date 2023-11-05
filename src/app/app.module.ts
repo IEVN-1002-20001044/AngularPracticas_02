@@ -6,23 +6,30 @@ import { AppComponent } from './app.component';
 import { ConversionComponent } from './formularios/conversion/conversion.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MultiplicacionComponent } from './formularios/multiplicacion/multiplicacion.component';
-import { MatFormFieldModule } from '@angular/material/form-field';
+
 import { CinepolisComponent } from './formularios/cinepolis/cinepolis.component';
+import { MenuComponent } from './menu/menu/menu.component';
+import { MaterialModule } from './material/material/material.module';
+import { HomeComponent } from './home/home.component';
+import { AppRoutingModule } from './app-routing.module'; // Asegúrate de importar correctamente AppRoutingModule
 
 @NgModule({
   declarations: [
     AppComponent,
     ConversionComponent,
     MultiplicacionComponent,
-    CinepolisComponent
+    CinepolisComponent,
+    MenuComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatFormFieldModule, //importación del material
+    MaterialModule,
+    AppRoutingModule // Asegúrate de agregar AppRoutingModule en imports
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

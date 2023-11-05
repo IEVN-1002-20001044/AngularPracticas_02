@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "AngularPracticas_02": {
+    "AngularEjemplo_02": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-practicas-02",
+            "outputPath": "dist/angular-ejemplo-02",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -63,10 +63,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "AngularPracticas_02:build:production"
+              "browserTarget": "AngularEjemplo_02:build:production"
             },
             "development": {
-              "browserTarget": "AngularPracticas_02:build:development"
+              "browserTarget": "AngularEjemplo_02:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -74,7 +74,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "AngularPracticas_02:build"
+            "browserTarget": "AngularEjemplo_02:build"
           }
         },
         "test": {
