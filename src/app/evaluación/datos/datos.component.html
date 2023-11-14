@@ -1,0 +1,443 @@
+
+
+
+<ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+    <li class="nav-item bg-warning" role="presentation">
+      <a
+        class="nav-link active "
+        id="ex3-tab-1"
+        data-mdb-toggle="pill"
+        href="#ex3-pills-1"
+        role="tab"
+        aria-controls="ex3-pills-1"
+        aria-selected="true"
+        >Registro</a
+      >
+    </li>
+    <li class="nav-item bg-warning" role="presentation">
+      <a
+        class="nav-link"
+        id="ex3-tab-2"
+        data-mdb-toggle="pill"
+        href="#ex3-pills-2"
+        role="tab"
+        aria-controls="ex3-pills-2"
+        aria-selected="false"
+        >Mini examen - Random</a
+      >
+    </li>
+  </ul>
+  
+  <form
+    [formGroup]="evaluacionn"
+    (ngSubmit)="onSubmit()"
+    class="tab-content"
+    id="ex2-content"
+  >
+    <div
+      class="tab-pane fade show active"
+      id="ex3-pills-1"
+      role="tabpanel"
+      aria-labelledby="ex3-tab-1"
+    >
+      <div class="container-fluid">
+        <div class="w-75 mx-auto">
+          <div class="mb-3">
+            <label class="form-label" for="nombre">Nombre</label>
+            <input
+              class="form-control"
+              formControlName="nombre"
+              type="text"
+              placeholder="Nombre"
+              name="nombre"
+              id="nombre"
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="apaterno">Apellido Paterno</label>
+            <input
+              class="form-control"
+              formControlName="apaterno"
+              type="text"
+              placeholder="Apellido Paterno"
+              name="apaterno"
+              id="apaterno"
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="amaterno">Apellido Materno</label>
+            <input
+              class="form-control"
+              formControlName="amaterno"
+              type="text"
+              placeholder="Apellido Materno"
+              name="amaterno"
+              id="amaterno"
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="correo">Fecha de Nacimiento</label>
+            <div class="w-100 d-flex">
+              <input
+                class="form-control"
+                formControlName="dd"
+                type="number"
+                placeholder="Dia"
+                name="dd"
+                id="dd"
+              />
+  
+              <input
+                class="form-control mx-2"
+                formControlName="mm"
+                type="number"
+                placeholder="Mes"
+                name="mm"
+                id="mm"
+              />
+  
+              <input
+                class="form-control"
+                formControlName="yyyy"
+                type="number"
+                placeholder="Año"
+                name="yyyy"
+                id="yyyy"
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="amaterno">Sexo</label>
+            <div class="w-100 d-flex">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="sexo"
+                  id="sexo"
+                  formControlName="sexo"
+                  value="F"
+                />
+                <label class="form-check-label" for="exampleRadios1">
+                  Femenino
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="sexo"
+                  id="sexo"
+                  formControlName="sexo"
+                  value="M"
+                />
+                <label class="form-check-label" for="exampleRadios2">
+                  Masculino
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div
+      class="tab-pane fade"
+      id="ex3-pills-2"
+      role="tabpanel"
+      aria-labelledby="ex3-tab-2"
+    >
+      <div class="container-fluid">
+        <div class="w-75 mx-auto">
+          <h5 class="mb-3" style="font-size: 20px; font-weight: bold;">Mini-Examen</h5>
+  
+          <div class="mb-3">
+            <label class="form-label" for="p1">1. ¿Cuántas orejas tiene un pollo?</label>
+            <div class="w-100 d-flex">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="p1"
+                  id="p1"
+                  formControlName="p1"
+                  value="a"
+                />
+                <label class="form-check-label" for="exampleRadios1">a| ??qué dices</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="p1"
+                  id="p1"
+                  formControlName="p1"
+                  value="b"
+                />
+                <label class="form-check-label" for="exampleRadios1">b| 4</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="p1"
+                  id="p1"
+                  formControlName="p1"
+                  value="c"
+                />
+                <label class="form-check-label" for="exampleRadios1">c| 1
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="p1"
+                  id="p1"
+                  formControlName="p1"
+                  value="d"
+                />
+                <label class="form-check-label" for="exampleRadios1">d|  2
+                </label>
+              </div>
+            </div>
+          </div>
+  
+          <div class="mb-3">
+            <label class="form-label">2. ¿Cuánto es 2+2?</label>
+            <div class="w-100 d-flex">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="p2"
+                  id="p2"
+                  formControlName="p2"
+                  value="a"
+                />
+                <label class="form-check-label" for="exampleRadios1">a| 22</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="p2"
+                  id="p2"
+                  formControlName="p2"
+                  value="b"
+                />
+                <label class="form-check-label" for="exampleRadios1">b| 4</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="p2"
+                  id="p2"
+                  formControlName="p2"
+                  value="c"
+                />
+                <label class="form-check-label" for="exampleRadios1">b| 2</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="p2"
+                  id="p2"
+                  formControlName="p2"
+                  value="d"
+                />
+                <label class="form-check-label" for="exampleRadios1">d| 6</label>
+              </div>
+            </div>
+          </div>
+  
+          <div class="mb-3">
+            <label class="form-label">3. ¿Agua pasa por mi casa, ...?</label>
+            <div class="w-100 d-flex">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="p3"
+                  id="p3"
+                  formControlName="p3"
+                  value="a"
+                />
+                <label class="form-check-label" for="exampleRadios1">a| Awacate </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="p3"
+                  id="p3"
+                  formControlName="p3"
+                  value="b"
+                />
+                <label class="form-check-label" for="exampleRadios1">b| Cate de mi corazón</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="p3"
+                  id="p3"
+                  formControlName="p3"
+                  value="c"
+                />
+                <label class="form-check-label" for="exampleRadios1">c| vive en el rio</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="p3"
+                  id="p3"
+                  formControlName="p3"
+                  value="d"
+                />
+                <label class="form-check-label" for="exampleRadios1">d| se inundó</label>
+              </div>
+            </div>
+          </div>
+  
+          <div class="mb-3">
+            <label class="form-label">Mascota 4. ¿De qué color es el moño de la que me trae todo el día mareado?</label>
+            <div class="w-100 d-flex">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="p4"
+                  id="p4"
+                  formControlName="p4"
+                  value="a"
+                />
+                <label class="form-check-label" for="exampleRadios1">a| Carmesi</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="p4"
+                  id="p4"
+                  formControlName="p4"
+                  value="b"
+                />
+                <label class="form-check-label" for="exampleRadios1">b| Escarlata</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="p4"
+                  id="p4"
+                  formControlName="p4"
+                  value="c"
+                />
+                <label class="form-check-label" for="exampleRadios1">c| Rosa</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="p4"
+                  id="p4"
+                  formControlName="p4"
+                  value="d"
+                />
+                <label class="form-check-label" for="exampleRadios1">d| rojo</label>
+              </div>
+            </div>
+          </div>
+  
+          <div class="mb-3">
+            <label class="form-label">Tarjeta 5. ¿Había unavez...?</label>
+            <div class="w-100 d-flex">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="p5"
+                  id="p5"
+                  formControlName="p5"
+                  value="a"
+                />
+                <label class="form-check-label" for="exampleRadios1">a| truz</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="p5"
+                  id="p5"
+                  formControlName="p5"
+                  value="b"
+                />
+                <label class="form-check-label" for="exampleRadios1">b| chilaquiles</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="p5"
+                  id="p5"
+                  formControlName="p5"
+                  value="c"
+                />
+                <label class="form-check-label" for="exampleRadios1">c| En un reino muy lejano
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="p5"
+                  id="p5"
+                  formControlName="p5"
+                  value="d"
+                />
+                <label class="form-check-label" for="exampleRadios1">d| Sí</label>
+              </div>
+            </div>
+          </div>
+  
+          <button
+            type="submit"
+            class="btn btn-warning w-100 mx-auto"
+            data-mdb-toggle="modal"
+            data-mdb-target="#exampleModal"
+          >
+            Finalizar
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+  
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="false"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" style="font-size: 20px">
+            Resultados
+          </h5>
+        </div>
+        <div class="modal-body">
+          <p>{{ saludo }}</p>
+          <p>{{ res }}</p>
+        </div>
+        <div class="modal-footer">
+          <a href="/examenp2" class="btn btn-warning">Finalizar</a>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ConversionComponent } from './formularios/conversion/conversion.component';
@@ -11,7 +11,8 @@ import { CinepolisComponent } from './formularios/cinepolis/cinepolis.component'
 import { MenuComponent } from './menu/menu/menu.component';
 import { MaterialModule } from './material/material/material.module';
 import { HomeComponent } from './home/home.component';
-import { AppRoutingModule } from './app-routing.module'; // Asegúrate de importar correctamente AppRoutingModule
+import { AppRoutingModule } from './app-routing.module';
+import { DatosComponent } from './evaluación/datos/datos.component';
 
 @NgModule({
   declarations: [
@@ -20,14 +21,17 @@ import { AppRoutingModule } from './app-routing.module'; // Asegúrate de import
     MultiplicacionComponent,
     CinepolisComponent,
     MenuComponent,
-    HomeComponent
+    HomeComponent,
+    DatosComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
     MaterialModule,
-    AppRoutingModule // Asegúrate de agregar AppRoutingModule en imports
+    AppRoutingModule,
+    ReactiveFormsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

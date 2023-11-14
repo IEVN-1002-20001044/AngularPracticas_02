@@ -7,7 +7,7 @@ import { MultiplicacionComponent } from './formularios/multiplicacion/multiplica
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  // { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'Conversion', component: ConversionComponent },
   { path: 'Multi', component: MultiplicacionComponent },
